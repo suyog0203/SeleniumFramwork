@@ -3,13 +3,14 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import utilities.DriverFactory;
 
 public class BaseTest {
-    protected WebDriver driver;
+     public WebDriver driver;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         driver = DriverFactory.initDriver();
         DriverFactory.goTo();
@@ -19,4 +20,5 @@ public class BaseTest {
     public void tearDown() {
         DriverFactory.quitDriver();
     }
+
 }
