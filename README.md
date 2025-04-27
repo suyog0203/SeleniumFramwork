@@ -16,27 +16,6 @@ Logging: SLF4J + Logback
 
 Design Pattern: Page Object Model (POM)
 
-📂 Project Structure
-bash
-Copy
-Edit
-amazon-automation-framework/
-├── src/main/java/
-│   ├── base/         # Base classes (BaseTest, BasePage)
-│   ├── pages/        # Page classes (HomePage, SearchPage, etc.)
-│   ├── utilities/    # Utilities (WaitUtils, DriverFactory)
-│   └── listeners/    # TestNG Listeners (for reporting & logging)
-│
-├── src/test/java/
-│   └── tests/        # Test classes (AmazonTestCases)
-│
-├── config/           # Config properties (URLs, credentials)
-├── drivers/          # WebDriver binaries
-├── reports/          # Reports output
-├── logs/             # Logs output
-├── pom.xml           # Maven file with dependencies
-├── testng.xml        # TestNG suite file
-└── README.md         # Project documentation
 
 ⚙️ Setup & Installation
 Clone the repository:
