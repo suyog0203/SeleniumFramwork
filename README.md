@@ -1,40 +1,92 @@
+This is a Selenium Java TestNG framework designed to automate key functionalities of ecommerce website as part of a portfolio project.
+The framework is built from scratch, following best practices like Page Object Model (POM), Utilities, Listeners, Logging, and Reporting.
 
-# 🛒 Amazon Automation Framework
+📌 Tech Stack
+Language: Java
 
-This is a **Selenium Java TestNG framework** designed to automate key functionalities of Amazon.
+Automation Tool: Selenium WebDriver
 
----
+Build Tool: Maven
 
-## 📌 Tech Stack
+Test Framework: TestNG
 
-- Java
-- Selenium WebDriver
-- TestNG
-- Maven
-- WebDriverManager
+Reporting: Extent Reports / Allure Reports
 
----
+Logging: SLF4J + Logback
 
-## 📂 Project Structure
+Design Pattern: Page Object Model (POM)
 
-- `base` - Common test setup and teardown
-- `pages` - Page Object Model classes
-- `utilities` - Utility classes (Driver Factory)
-- `tests` - Test classes
-- `config` - Configuration properties
+📂 Project Structure
+bash
+Copy
+Edit
+amazon-automation-framework/
+├── src/main/java/
+│   ├── base/         # Base classes (BaseTest, BasePage)
+│   ├── pages/        # Page classes (HomePage, SearchPage, etc.)
+│   ├── utilities/    # Utilities (WaitUtils, DriverFactory)
+│   └── listeners/    # TestNG Listeners (for reporting & logging)
+│
+├── src/test/java/
+│   └── tests/        # Test classes (AmazonTestCases)
+│
+├── config/           # Config properties (URLs, credentials)
+├── drivers/          # WebDriver binaries
+├── reports/          # Reports output
+├── logs/             # Logs output
+├── pom.xml           # Maven file with dependencies
+├── testng.xml        # TestNG suite file
+└── README.md         # Project documentation
 
----
+⚙️ Setup & Installation
+Clone the repository:
 
-## ⚙️ How to Run
+bash
+Copy
+Edit
+git clone https://github.com/your-username/amazon-automation-framework.git
+Import the project into your favorite IDE (IntelliJ IDEA / Eclipse).
 
-- Clone the repository
-- Install dependencies using Maven
-- Update `config.properties` if needed
-- Run `mvn clean test`
+Install Maven dependencies:
 
----
+bash
+Copy
+Edit
+mvn clean install
+Update the config/config.properties file with your URL and browser settings.
 
-## 🙌 Author
+Run the tests:
 
-**Suyog Mokal**  
-*Senior QA Engineer | Automation Enthusiast*
+bash
+Copy
+Edit
+mvn clean test
+
+🚀 Functionalities Automated
+
+Search for products
+
+Filter results (price, brand)
+
+Add products to cart
+
+Validate product details
+
+Login and logout flows 
+
+📊 Reporting
+Extent Reports are generated in the /reports folder after each test run.
+
+Allure Reports can also be integrated (optional enhancement).
+
+📋 Future Enhancements
+Add CI/CD integration with GitHub Actions / Jenkins
+
+
+
+🙌 Author
+Suyog Mokal
+
+Senior QA Engineer | Automation Enthusiast | Future QA Lead
+
+
