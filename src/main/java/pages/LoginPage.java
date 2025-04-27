@@ -31,7 +31,7 @@ public class LoginPage extends AbstractComponent {
 
 
     @Step("Searching product: {productName}")
-    public void Login(String username, String password)  {
+    public void login(String username, String password)  {
 
         waitForElementToAppear(userNameField);
         userNameField.sendKeys(username);

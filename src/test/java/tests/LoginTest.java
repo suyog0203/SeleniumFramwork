@@ -2,8 +2,10 @@
 package tests;
 
 import base.BaseTest;
+import config.ConfigManager;
 import io.qameta.allure.*;
 import listeners.AllureListener;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -26,7 +28,8 @@ public class LoginTest extends BaseTest {
     @Story("User Login")
     @Severity(SeverityLevel.CRITICAL)
     public void testLogin() {
-        loginPage.Login("standard_user", "secret_sauce");
+        BaseTest baseTest = new BaseTest();
+        baseTest.setUp();
     }
 }
 
