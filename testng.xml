@@ -4,6 +4,7 @@
     <test name="Demo Tests">
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.CheckoutTest"></class>
         </classes>
     </test>
     <listeners>
