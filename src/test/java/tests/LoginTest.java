@@ -2,9 +2,9 @@
 package tests;
 
 import base.BaseTest;
-import config.ConfigManager;
 import io.qameta.allure.*;
 import listeners.AllureListener;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -15,7 +15,7 @@ import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
-    private LoginPage loginPage;
+     LoginPage loginPage;
 
     @BeforeMethod
     public void setUpTest() {
